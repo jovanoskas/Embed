@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="filterReviews.js"></script>
+</head>
+<body>
+<form>
+    <div class="form-group">
+        <select class="form-control" id="rating">
+            <option>Lowest first</option>
+            <option>Highest first</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="minRating">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="date">
+            <option>Oldest first</option>
+            <option>Newest first</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="hasText">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+    </div>
+    <button type="button" onclick="filterReviews()">Submit</button>
+</form>
+<div id='result'>
+    <table>
+    </table>
+</div>
+</body>
+</html>
